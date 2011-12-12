@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Refer Theme Base" basedir="." default="build">
+
+	<property name="project.distdir" value="${project.basedir}/dist" />
+	<property name="project.srcdir" value="${project.basedir}/src" />
+
+	<fileset dir="${project.srcdir}" id="srcfiles">
+		<include name="index.html"/>
+		<include name="resources/css/ext-neptune.css"/>
+		<include name="ext-4.1-pr1/ext-all.js"/>
+		<include name="ext-4.1-pr1/ext-neptune.js"/>
+		<include name="app-all.js"/>
+		<include name="ext-4.1-pr1/resources/themes/images/neptune/grid/header-border.png"/>
+		<include name="ext-4.1-pr1/resources/themes/images/neptune/icons.png"/>
+		<exclude name="**/.DS_Store"/>
+		<exclude name="**/.empty"/>
+		<exclude name="**/.svn"/>
+	</fileset>
+
+	<target name="build" description="Packages the theme">
+		<copy todir="${project.distdir}">
+			<fileset refid="srcfiles" />
+		</copy>
+	</target>
+
+</project>

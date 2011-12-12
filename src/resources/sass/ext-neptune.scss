@@ -1,0 +1,170 @@
+@import 'compass';
+@import 'neptune/default/all';
+
+.x-panel-body-default {
+
+	background-image: url("http://prome-web.com/img/bg_header_top.png");
+
+	background-repeat: repeat-x;
+
+	background-color: #FFF;
+
+}
+
+.x-panel .x-grid-body {
+	border-bottom-width: 0;
+}
+
+@include extjs-panel-ui(
+
+	'documentation-header',
+
+	$ui-header-color: #0079D7,
+
+	$ui-header-background-color: null
+
+);
+
+.x-panel-documentation-header {
+
+	background-color: transparent;
+
+	.x-panel-header-text {
+		font-size: 20px;
+	}
+
+}
+
+@include extjs-panel-ui(
+
+	'documentation-footer',
+
+	$ui-base-color: #DDD,
+
+	$ui-header-background-color: #DBF6FF,
+
+	$ui-header-color: #0DA0D6,
+
+	$ui-header-background-gradient: none
+
+);
+
+.x-panel-header-documentation-footer {
+
+	border-top: solid 1px #BBE8F8;
+
+	text-align: right;
+
+	padding: 5px;
+	
+	.x-panel-header-text {
+		font-size: 11px;
+	}
+}
+
+@include extjs-panel-ui(
+
+	'documentation-page',
+
+	//$ui-base-color: null,
+	//
+	//$ui-border-color: null,
+	//$ui-border-radius: null,
+	//$ui-border-width: 0,
+	//
+	//$ui-header-color: null,
+	//$ui-header-font-family: $panel-header-font-family,
+	//$ui-header-font-size: $panel-header-font-size,
+	//$ui-header-font-weight: $panel-header-font-weight,
+	//$ui-header-border-width: $panel-header-border-width,
+	//$ui-header-border-color: $ui-border-color,
+	//$ui-header-background-color: null,
+	//$ui-header-background-gradient: matte,
+	//$ui-header-inner-border-color: null,
+
+	//$ui-body-border-color: null,
+	//$ui-body-border-width: null,
+	//$ui-body-border-style: solid,
+	//$ui-body-font-size: null,
+	//$ui-body-font-weight: null
+
+	$ui-body-background-color: null,
+
+	$ui-body-color: #7C7C7C
+
+);
+
+.x-panel-documentation-page {
+	
+	background-color: transparent;
+
+}
+
+.x-panel-body-documentation-page {
+
+	padding: 20px;
+
+	h1 {
+		color: #0090FF;
+		clear: left;
+		font-family: 'ColaborateMediumRegular';
+		font-size: 2.7em;
+		font-weight: normal;
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+
+	h1 + h2 {
+		margin-top: 0px;
+	}
+	
+	h2 {
+		color: darken(#0090FF, 10%);
+		font-family: 'ColaborateMediumRegular';
+		font-size: 2.1em;
+		font-weight: normal;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	h2 + h3 {
+		margin-top: 0px;
+	}
+	
+	h3 {
+		color: darken(#0090FF, 20%);
+		font-family: 'ColaborateLightRegular';
+		font-size: 1.7em;
+		font-weight: normal;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	ul, ol {
+		margin-top: 10px;
+		padding-left: 30px;
+	}
+
+	ul li {
+		list-style-type: square;
+	}
+
+	ol li {
+		list-style-type: decimal;
+	}
+
+	pre {
+		border: 1px solid #BBB;
+		-webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.13);
+		-moz-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.13);
+		box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.13);
+		padding: 5px;
+		margin: 10px 0 12px;
+	}
+
+	code {
+		font-family: Monaco,Consolas,"Lucida Console",monospace
+	}
+
+}
+
