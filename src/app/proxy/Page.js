@@ -34,16 +34,17 @@ Ext.define('Refer.proxy.Page', {
 			children.push(this._processNode(node.child_nodes[i]));
 		}
 
-		for (var i = 0; i < node.pages.length; i++) {
+		for (i = 0; i < node.pages.length; i++) {
 			var page = node.pages[i];
 			children.push({
 				id: page.id,
 				text: page.title,
-				leaf: true,
+				leaf: true
 			});
 		}
 
 		var data = {
+			id: node.name,
 			text: node.name,
 			children: children
 		};

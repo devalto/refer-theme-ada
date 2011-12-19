@@ -1,5 +1,11 @@
 @import 'compass';
 @import 'neptune/default/all';
+@import '../../highlighter/sass/shCore';
+@import '../../highlighter/sass/shThemeDefault';
+
+.syntaxhighlighter {
+	
+}
 
 .x-panel-body-default {
 
@@ -166,5 +172,8 @@
 		font-family: Monaco,Consolas,"Lucida Console",monospace
 	}
 
-}
+	strong {
+		font-weight: bolder;
+	}
 
+}

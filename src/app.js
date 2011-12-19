@@ -32,5 +32,7 @@ Ext.application({
 				}]
 			}]
 		});
+		
+		this.getController('Pages').procedeHash();
 	}
 });
