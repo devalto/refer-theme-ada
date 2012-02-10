@@ -10147,29 +10147,29 @@ table.x-datepicker-inner .x-datepicker-disabled a {
   height: 24px;
 }
 /* line 848, ../../ext-4.1-pr1/resources/themes/stylesheets/neptune/default/widgets/_grid.scss */
-.x-grid-row-editor-buttons -ml, .x-grid-row-editor-buttons -mr, .x-grid-row-editor-buttons -bl, .x-grid-row-editor-buttons -br, .x-grid-row-editor-buttons -bc {
+.x-grid-row-editor-buttons-ml, .x-grid-row-editor-buttons-mr, .x-grid-row-editor-buttons-bl, .x-grid-row-editor-buttons-br, .x-grid-row-editor-buttons-bc {
   position: absolute;
   overflow: hidden;
 }
 /* line 853, ../../ext-4.1-pr1/resources/themes/stylesheets/neptune/default/widgets/_grid.scss */
-.x-grid-row-editor-buttons -bl, .x-grid-row-editor-buttons -br {
+.x-grid-row-editor-buttons-bl, .x-grid-row-editor-buttons-br {
   width: 4px;
   height: 4px;
   bottom: 0px;
   background-image: url('../../ext-4.1-pr1/resources/themes/images/neptune/panel/panel-default-framed-corners.gif');
 }
 /* line 859, ../../ext-4.1-pr1/resources/themes/stylesheets/neptune/default/widgets/_grid.scss */
-.x-grid-row-editor-buttons -bl {
+.x-grid-row-editor-buttons-bl {
   left: 0px;
   background-position: 0px -16px;
 }
 /* line 863, ../../ext-4.1-pr1/resources/themes/stylesheets/neptune/default/widgets/_grid.scss */
-.x-grid-row-editor-buttons -br {
+.x-grid-row-editor-buttons-br {
   right: 0px;
   background-position: 0px -20px;
 }
 /* line 867, ../../ext-4.1-pr1/resources/themes/stylesheets/neptune/default/widgets/_grid.scss */
-.x-grid-row-editor-buttons -bc {
+.x-grid-row-editor-buttons-bc {
   position: absolute;
   left: 4px;
   bottom: 0px;
@@ -10178,18 +10178,18 @@ table.x-datepicker-inner .x-datepicker-disabled a {
   background-color: #167cce;
 }
 /* line 875, ../../ext-4.1-pr1/resources/themes/stylesheets/neptune/default/widgets/_grid.scss */
-.x-grid-row-editor-buttons -ml, .x-grid-row-editor-buttons -mr {
+.x-grid-row-editor-buttons-ml, .x-grid-row-editor-buttons-mr {
   height: 27px;
   width: 1px;
   top: 1px;
   background-color: #167cce;
 }
 /* line 881, ../../ext-4.1-pr1/resources/themes/stylesheets/neptune/default/widgets/_grid.scss */
-.x-grid-row-editor-buttons -ml {
+.x-grid-row-editor-buttons-ml {
   left: 0px;
 }
 /* line 884, ../../ext-4.1-pr1/resources/themes/stylesheets/neptune/default/widgets/_grid.scss */
-.x-grid-row-editor-buttons -mr {
+.x-grid-row-editor-buttons-mr {
   background-position: 0px -20px;
   right: 0px;
 }
@@ -12875,7 +12875,7 @@ textarea.x-form-invalid-field {
   vertical-align: middle;
   *vertical-align: auto;
 }
-/* line 7, ../../../../../../../var/lib/gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+/* line 7, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
 .x-surface {
   *display: inline;
 }
@@ -14657,6 +14657,11 @@ textarea.x-form-invalid-field {
 /* line 103, ../../highlighter/sass/shThemeDefault.scss */
 .syntaxhighlighter .keyword {
   font-weight: bold !important;
+}
+
+/* line 6, ../sass/ext-neptune.scss */
+.syntaxhighlighter {
+  overflow: auto !important;
 }
 
 /* line 10, ../sass/ext-neptune.scss */
